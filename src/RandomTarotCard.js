@@ -20,7 +20,7 @@ function RandomTarotCard() {
         setRandomTarotCard(jsonResult.cards[0])
       })
 
-      console.log(randomTarotCard.name_short);
+  
 
   }, [])
 
