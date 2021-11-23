@@ -30,7 +30,7 @@ function App() {
         <div className="random">
           {/* Random Card Button */}
           {/* If randomCard is true, display the card info */}
-          <button onClick={handleRandomCard}>Get a Random Tarot Card</button>
+          <button onClick={handleRandomCard}>{randomCard ? "Start Over" : "Get a Random Card"}</button>
         </div>
 
       </div>

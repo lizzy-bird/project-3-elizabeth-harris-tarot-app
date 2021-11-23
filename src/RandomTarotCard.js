@@ -4,7 +4,7 @@ function RandomTarotCard() {
 
   //initialize state to hold the tarot card info
 
-  const [randomTarotCard, setRandomTarotCard ] = useState({});
+  const [randomTarotCard, setRandomTarotCard ] = useState([]);
 
   //define a useEffect, which will run the "side effect" of fetching the tarot card data only when the component is rendered in the DOM
 
@@ -20,10 +20,15 @@ function RandomTarotCard() {
         setRandomTarotCard(jsonResult.cards[0])
       })
 
+      console.log(randomTarotCard.name_short);
+
   }, [])
+
+  
 
   return (
     <section class="tarotCardInfo">
+      
         <h2>{randomTarotCard.name}</h2>
         <h4>Meaning Upright:</h4>
         <p>{randomTarotCard.meaning_up}</p>
