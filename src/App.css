@@ -88,3 +88,13 @@ h1{
     color:#ddddd4;
 }
 
+@media (max-width:428px){
+
+    .random{
+        height:150px;
+    }
+
+    .tarotCardInfo{
+        width:95%;
+    }
+}
