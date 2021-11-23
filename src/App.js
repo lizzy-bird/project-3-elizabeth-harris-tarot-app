@@ -35,13 +35,12 @@ function App() {
 
         <div className="search">
           <form action="submit">
-          <label htmlFor="selectCard">Select a Card</label>
-          <select name="selectCard" id="selectCard">
-            <option value="#">Select a Card</option>
-          </select>
-
+            <label htmlFor="selectCard">Select a Card</label>
+            <select name="selectCard" id="selectCard">
+              <option value="#">Select a Card</option>
+            </select>
           </form>
-          
+        </div>  
 
       </div>
 

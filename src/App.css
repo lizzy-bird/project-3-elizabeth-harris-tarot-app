@@ -58,24 +58,28 @@ h1{
     margin:50px;
     background-color:#35371F;
     border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     box-shadow: -5px 5px 5px 0px black;
 
 }
 
-.random{
-    /* border:2px solid red; */
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    
-}
-
-.random button{
+.random button, select{
     background-color:#ddddd4;
     border:none;
     padding:15px;
     border-radius:10px;
-    
+}
+
+.form{
+    display:flex;
+    flex-wrap:wrap;
+
+}
+
+label{
+    display:none;
 }
 
 .tarotCardInfo{
@@ -86,5 +90,19 @@ h1{
     border-radius:20px;
     margin:20px auto;
     color:#ddddd4;
+}
+
+/* Responsive Styles */
+
+@media (max-width:428px){
+
+    .random,
+    .search{
+        height:150px;
+    }
+
+    .tarotCardInfo{
+        width:95%;
+    }
 }
 
