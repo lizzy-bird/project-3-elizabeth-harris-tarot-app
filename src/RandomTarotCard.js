@@ -22,14 +22,12 @@ function RandomTarotCard() {
 
   }, [])
 
-  //!Do I need a dependency array? I think so????
-
   return (
     <section class="tarotCardInfo">
         <h2>{randomTarotCard.name}</h2>
-        <p>Meaning Upright:</p>
+        <h4>Meaning Upright:</h4>
         <p>{randomTarotCard.meaning_up}</p>
-        <p>Meaning Reverse:</p>
+        <h4>Meaning Reverse:</h4>
         <p>{randomTarotCard.meaning_rev}</p>
       
     </section>
