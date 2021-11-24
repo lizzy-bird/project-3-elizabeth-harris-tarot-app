@@ -14,6 +14,8 @@ body{
     flex-wrap:wrap;
     justify-content:center;
     min-height:100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(48,42,55,1) 100%);
 }
 h1, 
 h2, 
@@ -31,6 +33,7 @@ p{
 }
 main{
     text-align:center;
+   
 }
 
 .selectors{
@@ -38,10 +41,10 @@ main{
     justify-content:center;
     flex-wrap:wrap;
     width:100%;
-    background-image:url(./background.png);
+    /* background-image:url(./background.png);
     background-position:center;
     background-size:cover;
-    background-repeat:no-repeat;
+    background-repeat:no-repeat; */
 }
 
 h1{

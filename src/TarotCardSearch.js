@@ -6,25 +6,25 @@
 
 
 
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 
-function TarotCardSearch (props) {
+// function TarotCardSearch (props) {
 
 
-    const [ userChoice, setUserChoice ] = useState('placeholder')
+//     const [ userChoice, setUserChoice ] = useState('placeholder')
 
-    //create an event handler to listen for when the select element has been changed
-    //create a function that will update state when the user selects a new option
+//     //create an event handler to listen for when the select element has been changed
+//     //create a function that will update state when the user selects a new option
 
-    const handleUserChoice = (event) => {
-        setUserChoice(event.target.value)
-    }
+//     const handleUserChoice = (event) => {
+//         setUserChoice(event.target.value)
+//     }
 
-    // return (
-    //     // <form onSubmit={(event) => }></form>
-    // )
+//     // return (
+//     //     // <form onSubmit={(event) => }></form>
+//     // )
 
-    //create a new array, adding the img property with my own images
-}
+//     //create a new array, adding the img property with my own images
+// }
 
-export default TarotCardSearch;
+// export default TarotCardSearch;

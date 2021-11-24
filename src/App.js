@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import RandomTarotCard from './RandomTarotCard';
+ 
 
 
 function App() {
@@ -33,14 +34,14 @@ function App() {
           <button onClick={handleRandomCard}>{randomCard ? "Start Over" : "Get a Random Card"}</button>
         </div>
 
-        <div className="search">
+        {/* <div className="search">
           <form action="submit">
             <label htmlFor="selectCard">Select a Card</label>
             <select name="selectCard" id="selectCard">
               <option value="#">Select a Card</option>
             </select>
           </form>
-        </div>  
+        </div>   */}
 
       </div>
 
