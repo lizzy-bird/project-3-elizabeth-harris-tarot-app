@@ -14,6 +14,8 @@ body{
     flex-wrap:wrap;
     justify-content:center;
     min-height:100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(48,42,55,1) 100%);
 }
 h1, 
 h2, 
@@ -31,6 +33,7 @@ p{
 }
 main{
     text-align:center;
+   
 }
 
 .selectors{
@@ -38,10 +41,10 @@ main{
     justify-content:center;
     flex-wrap:wrap;
     width:100%;
-    background-image:url(./background.png);
+    /* background-image:url(./background.png);
     background-position:center;
     background-size:cover;
-    background-repeat:no-repeat;
+    background-repeat:no-repeat; */
 }
 
 h1{
@@ -51,31 +54,37 @@ h1{
     color:#ddddd4;
 }
 
-.random,
-.search{
+.random{
     width:300px;
     height:450px;
     margin:50px;
     background-color:#35371F;
     border-radius:20px;
-    box-shadow: -5px 5px 5px 0px black;
-
-}
-
-.random{
-    /* border:2px solid red; */
     display:flex;
     justify-content:center;
     align-items:center;
-    
+    box-shadow: -5px 5px 5px 0px black;
+    background-image:url(./background.png);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
-.random button{
+button{
     background-color:#ddddd4;
     border:none;
     padding:15px;
     border-radius:10px;
-    
+}
+
+.form{
+    display:flex;
+    flex-wrap:wrap;
+
+}
+
+label{
+    display:none;
 }
 
 .tarotCardInfo{
@@ -88,9 +97,12 @@ h1{
     color:#ddddd4;
 }
 
+/* Responsive Styles */
+
 @media (max-width:428px){
 
-    .random{
+    .random,
+    .search{
         height:150px;
     }
 
@@ -98,3 +110,4 @@ h1{
         width:95%;
     }
 }
+

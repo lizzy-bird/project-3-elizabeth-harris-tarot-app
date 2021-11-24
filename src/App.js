@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import RandomTarotCard from './RandomTarotCard';
+ 
 
 
 function App() {
@@ -8,11 +9,6 @@ function App() {
   //initialize states to contain the user info
 
   const [randomCard, setRandomCard] = useState(false)
-
-
-  
-
-
 
   //define event handlers
   const handleRandomCard = () => {
@@ -22,7 +18,6 @@ function App() {
     //now go connect it to the button
   }
 
- 
   return (
     <main class="App">
       <h1>Tarot Card App</h1>
@@ -32,6 +27,7 @@ function App() {
           {/* If randomCard is true, display the card info */}
           <button onClick={handleRandomCard}>{randomCard ? "Start Over" : "Get a Random Card"}</button>
         </div>
+
 
       </div>
 
