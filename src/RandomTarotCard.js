@@ -41,7 +41,7 @@ function RandomTarotCard() {
 
   return (
     <section class="tarotCardInfo"> 
-        <img src={tarotImage} alt={randomTarotCard.name_short} />
+        <img src={tarotImage} alt={randomTarotCard.name} />
         <h2>{randomTarotCard.name}</h2>
         <h4>Meaning Upright:</h4>
         <p>{randomTarotCard.meaning_up}</p>
