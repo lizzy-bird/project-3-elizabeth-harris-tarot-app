@@ -19,9 +19,11 @@ function App() {
   }
 
   return (
+    <>
     <main class="App">
       <h1>Tarot Card App</h1>
       <div className="selectors">
+        <p>Take a moment to pause and set your intention, then click the button below to pull a card.</p>
         <div className="random">
           {/* Random Card Button */}
           {/* If randomCard is true, display the card info */}
@@ -31,12 +33,18 @@ function App() {
 
       </div>
 
-    {
-      randomCard
-        ? <RandomTarotCard/>
+      {randomCard
+        ? <RandomTarotCard />
         : null
-    }
+      }
+
     </main>
+    
+    <footer>
+      <p><a href="https://junocollege.com/">Made at ©Juno College 2021</a></p>
+
+      </footer>
+    </>
   );
 }
 
