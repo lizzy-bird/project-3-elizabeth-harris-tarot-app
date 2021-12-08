@@ -22,13 +22,27 @@ function App() {
     <>
     <main class="App">
       <h1>Tarot Card App</h1>
+      <p className="instructions">Take a moment to pause and set your intention, then click the button below to pull a card.</p>
+
       <div className="selectors">
-        <p>Take a moment to pause and set your intention, then click the button below to pull a card.</p>
+
+
         <div className="random">
           {/* Random Card Button */}
           {/* If randomCard is true, display the card info */}
           <button onClick={handleRandomCard}>{randomCard ? "Start Over" : "Get a Random Card"}</button>
         </div>
+
+        <div className="search">
+        <form action="submit">
+            {/* //!Need to put in some kind of loop to create an <option> element for each card in the API
+            //!Need to tie the user selection to display the given card info (meaning up and rev) to the user (is this handleCardSearch?) */}
+          <label for="dropdown">Select a Card:</label>  
+          <select name="Search" id="dropdown">
+            <option value="#">Search by Card Name</option> 
+          </select>
+        </form>
+      </div>
 
 
       </div>
