@@ -37,10 +37,10 @@ function RandomTarotCard() {
 
   }, [])
 
-  // Does the image element need a key? What even is a key? 
+
 
   return (
-    <section class="tarotCardInfo"> 
+    <section className="tarotCardInfo clearfix"> 
         <img src={tarotImage} alt={randomTarotCard.name} />
         <h2>{randomTarotCard.name}</h2>
         <h4>Meaning Upright:</h4>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import RandomTarotCard from './RandomTarotCard';
+import TarotCardSearch from './TarotCardSearch';
  
 
 
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <>
-    <main class="App">
+    <main className="App">
       <h1>Tarot Card App</h1>
       <p className="instructions">Take a moment to pause and set your intention, then click the button below to pull a card.</p>
 
@@ -34,15 +35,21 @@ function App() {
         </div>
 
         <div className="search">
-        <form action="submit">
-            {/* //!Need to put in some kind of loop to create an <option> element for each card in the API
-            //!Need to tie the user selection to display the given card info (meaning up and rev) to the user (is this handleCardSearch?) */}
-          <label for="dropdown">Select a Card:</label>  
-          <select name="Search" id="dropdown">
-            <option value="#">Search by Card Name</option> 
-          </select>
-        </form>
-      </div>
+          <form action="submit">
+              {/* //!Need to put in some kind of loop to create an <option> element for each card in the API
+              //!Need to tie the user selection to display the given card info (meaning up and rev) to the user (is this handleCardSearch?) */}
+            <label htmlFor="dropdown">Select a Card:</label>  
+            <select name="Search" id="dropdown">
+              <option value="" hidden>Search by Card Name</option>
+
+              
+              <TarotCardSearch/>
+              
+            
+              
+            </select>
+          </form>
+        </div>
 
 
       </div>
@@ -51,6 +58,8 @@ function App() {
         ? <RandomTarotCard />
         : null
       }
+      
+      
 
     </main>
     
