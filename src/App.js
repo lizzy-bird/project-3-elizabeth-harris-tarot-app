@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import RandomTarotCard from './RandomTarotCard';
-import TarotCardSearch from './TarotCardSearch';
+// import TarotCardSearch from './TarotCardSearch';
  
 
 
